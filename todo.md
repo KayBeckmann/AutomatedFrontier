@@ -5,6 +5,7 @@
 - Fokus auf Drohnen- und Raumschiff-Automation
 - Spieler steuert Abläufe über eigene Scripts / Logik
 - Kombination aus Ressourcenabbau, Exploration, Forschung und Logistik
+- Startet als reines Singleplayer-Erlebnis; Multiplayer-/Backend-Anbindung folgt erst nach dem MVP.
 
 ## Basis / Hauptquartier
 - Zentrale Basis auf einem Planeten oder einer Raumstation
@@ -64,6 +65,13 @@
 - Systeme haben unterschiedliche Ressourcenverteilung
 - Erforschung über Scouts
 - Fog-of-War
+- Anomalien, Monster und Piraten bevölkern Sektoren und erzeugen Events / Gefahren.
+
+## Gefahren & Anomalien
+- **Anomalien**: temporäre Modifikatoren (z. B. Energieanstieg, Sensorstörungen) auf Kartenkacheln.
+- **Monster**: NPC-Gegner, die Drohnen/Schiffe bedrohen; reagieren auf Aktivitäten, benötigen Verteidigungs-Skripte.
+- **Piraten**: greifen Routen und Frachter an, verursachen Verluste oder verzögern Lieferketten.
+- Gefahren müssen mit Sensoren entdeckt, in Logs angezeigt und ggf. mit Skripten beantwortet werden.
 
 ## Ressourcen / Wirtschaft
 - Verschiedene Ressourcen:
@@ -124,4 +132,9 @@
 - Planet & Ressourcen generieren
 - GameLoop in Flutter/Flame bauen
 - grundlegende UI für Karte + Code Editor
-
+- Karten-Seed-Handling spezifizieren:
+  - Spieler kann beim Start einen Seed eingeben
+  - Optionaler Zufallsgenerator erzeugt Seed für neue Karte
+  - Seed muss im UI angezeigt und lokal gespeichert werden (Persistenz, später ggf. Backend-Sync)
+- Gefahren-Design finalisieren (Verhalten, Spawn-Regeln, Rewards) und erste Implementierung planen.
+- Backend-Erstellung bewusst zurückstellen, bis Singleplayer-Loop stabil ist.
