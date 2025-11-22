@@ -99,6 +99,7 @@
 ## Script-/Programmiersystem
 - Eigene Mini-Sprache
 - Befehle werden über Forschung erweitert
+- **Multilingualität**: Die Programmiersprache soll von Anfang an multilingual konzipiert werden (z.B. "IF" -> "WENN", "True" -> "Wahr"). Dies soll das Spiel Kindern und Nicht-Englischsprachigen zugänglich machen. Weitere Sprachen sollen später ergänzt werden.
 - Mögliche Befehle:
   - MOVE, SCAN, MINE, UNLOAD
   - IF, ELSE, ENDIF
